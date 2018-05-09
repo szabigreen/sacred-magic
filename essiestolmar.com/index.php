@@ -1,26 +1,22 @@
 <?php
 require('../vendor/autoload.php');
 $path = '../vendor/silex/silex/src/Silex';
-use Application as SacredApp;
-$app = new SacredApp();
-$app['debug'] = true;
-include_once("index-single-product.html");
 
+//----------------------------------------------------------
+require_once __DIR__.'/../vendor/autoload.php';
 
-// Register the monolog logging service
-$app->register(new Silex\Provider\MonologServiceProvider(), array(
-  'monolog.logfile' => 'php://stderr',
-));
-// Register view rendering
-$app->register(new Silex\Provider\TwigServiceProvider(), array(
-    'twig.path' => __DIR__.'/views',
-));
+$app = new Silex\Application();
 
-// own
-$app->get('/', function() use($app) {
-  $app['monolog']->addDebug('logging output.');
-  return str_repeat('Hello', getenv('TIMES'));
+$app->get('/hello/{name}', function($name) use($app) {
+    return 'Hello '.$app->escape($name);
 });
 
+$app->run();
+
+//--------------------------------------------------------------
+
+
+
+
 ?>
-    
+

@@ -3,7 +3,7 @@
 require('../vendor/autoload.php');
 
 
-use ..\vendor\silex\silex\src\Silex\Application;
+use ../vendor/silex/silex/src/Silex/Application;
 $app = new Application();
 $app['debug'] = true;
 include_once("index-single-product.html");

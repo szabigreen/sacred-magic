@@ -2,7 +2,7 @@
 <?php
 require('../vendor/autoload.php');
 
-$app = new Silex\Application()
+$app = new Silex\Application();
 $app['debug'] = true;
 include_once("index-single-product.html");
 

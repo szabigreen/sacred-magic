@@ -11,6 +11,6 @@ $app = new Silex\Application();
 //    return 'Hello '.$app->escape($name);
 //});
 
-$app->run();
+//$app->run();
 
 echo 'HELLo';

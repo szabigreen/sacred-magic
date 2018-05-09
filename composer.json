@@ -1,12 +1,17 @@
 {
     "require": {
+        "silex/silex": "2.*",
         "monolog/monolog": "1.0.*",
         "twig/twig": "^2.0",
-        "symfony/twig-bridge": "^3",
-        "silex/silex": "~1.1"
+        "symfony/twig-bridge": "^3"
   },
     "require-dev": {
         "heroku/heroku-buildpack-php": "*"
+  },
+    "autoload": {
+        "psr-0": {
+            "sacred=magic": "src/"
+        }
   },
      "post-install-cmd": [
      "php artisan clear-compiled",

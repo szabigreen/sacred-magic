@@ -1,12 +1,14 @@
 <?php
-require __DIR__.'/../vendor/autoload.php';
+//require __DIR__.'../vendor/autoload.php';
 
-$app = new Silex\Application();
+echo __DIR__.'../vendor/autoload.php';
 
-$app->get('/hello/{name}', function($name) use($app) {
-    return 'Hello '.$app->escape($name);
-});
+//$app = new Silex\Application();
 
-$app->run();
+//$app->get('/hello/{name}', function($name) use($app) {
+//    return 'Hello '.$app->escape($name);
+//});
+
+//$app->run();
 
 echo 'HELLo';

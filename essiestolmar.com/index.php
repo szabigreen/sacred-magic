@@ -20,4 +20,4 @@ $app->get('/a', function(){
 	return new Symfony\Component\HttpFoundation\Response("Hello world");
 });
 
-//$app->run();
+$app->run();

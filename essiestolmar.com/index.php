@@ -3,7 +3,7 @@
 require('../vendor/autoload.php');
 
 
-use /vendor/silex/silex/src/Silex/Application as SacredApp;
+use Silex\Application as SacredApp;
 $app = new SacredApp();
 $app['debug'] = true;
 include_once("index-single-product.html");

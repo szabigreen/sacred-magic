@@ -1,6 +1,6 @@
 <?php
-require('../vendor/autoload.php');
-$path = '../vendor/silex/silex/src/Silex';
+//require('../vendor/autoload.php');
+//$path = '../vendor/silex/silex/src/Silex';
 
 //----------------------------------------------------------
 require_once __DIR__.'/../vendor/autoload.php';

@@ -1,8 +1,8 @@
 
 <?php
 require('../vendor/autoload.php');
-
-ini_set('include_path', '/vendor/silex/src/Silex');
+$path = '/vendor/silex/src/Silex';
+set_include_path(get_include_path() . PATH_SEPARATOR . $path);
 use Silex\Application() as SacredApp;
 $app = new SacredApp();
 $app['debug'] = true;

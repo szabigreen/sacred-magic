@@ -7,17 +7,13 @@ require __DIR__.'/../vendor/autoload.php';
 
 $app = new Silex\Application();
 
-$app->get('/hello/{name}', function($name) use($app) {
-    return 'Hello '.$app->escape($name);
+$app->get("/users/{id}", function($id){
+   return "User - {$id}";
 });
 
 $app->get('/', function(){
 	return "Hello world";
 });
 
-
-$app->get('/a', function(){
-	return new Symfony\Component\HttpFoundation\Response("Hello world");
-});
 
 $app->run();

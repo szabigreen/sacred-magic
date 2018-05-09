@@ -1,6 +1,6 @@
 <?php
 require('../vendor/autoload.php');
-$path = '../vendor/silex/silex/src/Silex'
+$path = '../vendor/silex/silex/src/Silex';
 use Silex\Application as SacredApp;
 $app = new SacredApp();
 $app['debug'] = true;

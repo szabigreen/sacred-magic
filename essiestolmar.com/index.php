@@ -7,6 +7,9 @@ require __DIR__.'/../vendor/autoload.php';
 
 $app = new Silex\Application();
 
+$app['debug'] = true;
+include_once("index-single-product.html");
+
 $app->get("/users/{id}", function($id){
    return "User - {$id}";
 });
@@ -17,3 +20,5 @@ $app->get('/', function(){
 
 
 $app->run();
+
+

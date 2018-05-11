@@ -1,0 +1,11 @@
+Noindex: /index-single-product.html/
+Noindex: /highfive.html/
+Noindex: /notsure.html/
+Noindex: /portfolio.html/
+Noindex: /privacy.html/
+Noindex: /sourpuss.html/
+Noindex: /subscribe gift mandala.html/
+Noindex: /termsofservice.html/
+Noindex: /thanks.html/
+Noindex: /comingsoon.html/
+Noindex: /blog.html/

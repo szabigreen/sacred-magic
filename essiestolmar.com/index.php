@@ -8,7 +8,7 @@ require __DIR__.'/../vendor/autoload.php';
 $app = new Silex\Application();
 
 $app['debug'] = false;
-//include_once("index-single-product.html");
+include_once("index-single-product.html");
 
 $app->get("/users/{id}", function($id){
    return "User - {$id}";
@@ -19,7 +19,7 @@ $app->get("/users/{id}", function($id){
 });
 **/
 
-$app->run();
+//$app->run();
 
 
 /* use Application as SacredApp;

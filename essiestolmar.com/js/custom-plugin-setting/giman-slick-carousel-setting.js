@@ -36,7 +36,7 @@ $(document).ready(function(){
 
 	$('.logo-slider').slick({
 		infinite: true,
-		autoplay: false,
+		autoplay: true,
 		slidesToShow: 3,
 		dots: true,
 		arrows: false,

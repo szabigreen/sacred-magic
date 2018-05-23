@@ -45,10 +45,6 @@ $(document).ready(function(){
     if(isMobile.any()){   
         $.each($(".btn-subscribe"), function(){
             $(this).after("</br></br>");
-            $(this).after("</br></br>");
-            $(this).after("</br></br>");
-            $(this).after("</br></br>");
-        
         });
     }
 

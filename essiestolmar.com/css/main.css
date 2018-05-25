@@ -2346,7 +2346,7 @@ header {
   margin: 21px 0px;
 }
 .how-to-section .selima-font-needed {
-  font-family:Selima;
+  font-family: "Selima", sans-serif;
   font-size: 70px;
 }
 .how-to-title {
@@ -3782,9 +3782,9 @@ a.sellfy-buy-button {
 }
 @font-face {
     font-family:"Selima";
-    src: url("fonts/selima-webfont.ttf") /* TTF file for CSS3 browsers */  
-    src: url("fonts/selima-webfont.woff") format("woff"),
-    url("fonts/selima-webfont.") format("opentype");
+    src: url("fonts/selima-webfont.ttf"), /* TTF file for CSS3 browsers */  
+        url("fonts/selima-webfont.woff") format("woff"),
+        url("fonts/selima-webfont.") format("opentype");
 }
 .footer-text-font-weight-normal {
     font-weight:normal;

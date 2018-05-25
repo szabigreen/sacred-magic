@@ -2345,8 +2345,8 @@ header {
 .how-to-section .straightening {
   margin: 21px 0px;
 }
-.how-to-section .selima-font {
-  font-family:selima;
+.how-to-section .selima-font-needed {
+  font-family:Selima;
   font-size: 70px;
 }
 .how-to-title {
@@ -3781,12 +3781,13 @@ a.sellfy-buy-button {
     src: url("madsquire.ttf") /* TTF file for CSS3 browsers */  
 }
 @font-face {
-    font-family:"Selima-Script";
-    src: url("selima.ttf") /* TTF file for CSS3 browsers */  
+    font-family:"Selima";
+    src: url("selima-webfont.ttf") /* TTF file for CSS3 browsers */  
+    src: url("selima-webfont.woff") format("woff"),
+    url("selima-webfont.") format("opentype");
 }
-
 .footer-text-font-weight-normal {
     font-weight:normal;
-    font-family: "Selima-Script", sans-serif;
+    font-family: "Selima", sans-serif;
 }
 
